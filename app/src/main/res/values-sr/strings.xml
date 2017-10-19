@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Активности</string>
-    <string name="first_activity_name">ПрваАктивност</string>
-    <string name="second_activity_name">ДругаАктивност</string>
+    <string name="first_activity_name">Прва Активност</string>
+    <string name="second_activity_name">Друг аАктивност</string>
 
 </resources>

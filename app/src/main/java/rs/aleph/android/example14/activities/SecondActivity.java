@@ -21,9 +21,9 @@ public class SecondActivity extends Activity {
     private int position = 0;
 
     private Jelo[] jela = new Jelo[]{
-            new Jelo("sopska.jpg", "Sopska salata 400g", "Osvezavajuca salata od svezeg povrca i sira", "Paradajiz, krastavac, paprika i tvrdi sir.", 190.00, 300.00),
-            new Jelo("cezar.jpg", "Cezar salata 400g", "Obrok salata od svezeg povrca i mesa", "Paradajiz, krastavac, paprika i tvrdi sir.", 210.00, 350.00),
-            new Jelo("tuna.jpg", "Tuna salata 400g", "Obrok salata od svezeg povrca i tunjevine", "Paradajiz, krastavac, paprika i tvrdi sir.", 230.00, 320.00),
+            new Jelo("sopska.jpg", "Sopska salata 400g", "Osvezavajuca salata od svezeg povrca i sira", "Zelena paprika, krastavac, paradajza, luk, ljuta papričica i punomsani sir.", 190.00, 300.00),
+            new Jelo("cezar.jpg", "Cezar salata 400g", "Obrok salata od svezeg povrca i mesa", "Tost hleb u kockicama, pileće belo meso u trakama, zelena salata, beli luk, jaje i parmezan", 210.00, 350.00),
+            new Jelo("tuna.jpg", "Tuna salata 400g", "Obrok salata od svezeg povrca i tunjevine", "Zelena salata, makaroni, kukuruz, crveni pasulj, tuna u komadićima, zelene masline i crveni luk.", 230.00, 320.00),
             new Jelo("vegeterijana.jpg", "Vegeterijanska salata 400g", "Osvezavajuca salata od svezeg povrca", "Paradajiz, krastavac, paprika, tikvice i patlidzan.", 170.00, 280.00)
     };
 
@@ -50,6 +50,15 @@ public class SecondActivity extends Activity {
         // Finds "tvDescription" TextView and sets "text" property
         TextView tvOpis = (TextView) findViewById(R.id.tv_opis);
         tvOpis.setText(jela[position].getOpis());
+
+        TextView tvSastojci = (TextView) findViewById(R.id.tv_sastojci);
+        tvSastojci.setText(jela[position].getSastojci());
+
+        TextView tvKalorijskaVrednost = (TextView) findViewById(R.id.tv_kalorijskaVrednost);
+        tvKalorijskaVrednost.setText(jela[position].getKalorijskaVrednost() + "");
+
+        TextView tvCena = (TextView) findViewById(R.id.tv_cena);
+        tvCena.setText(jela[position].getCena() + "");
 
 
 

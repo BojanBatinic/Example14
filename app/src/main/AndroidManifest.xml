@@ -21,7 +21,7 @@
 
         <!-- Declares 2nd activity -->
         <activity
-            android:name=".activities.SecondActivity"
+            android:name="rs.aleph.android.example14.activities.SecondActivity"
             android:label="@string/second_activity_name"
             android:icon="@mipmap/ic_launcher">
         </activity>

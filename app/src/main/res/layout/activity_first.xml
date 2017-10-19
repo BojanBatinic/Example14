@@ -6,21 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start an Activity"
-        android:id="@+id/start_activity"
-        android:onClick="btnStartActivityClicked"
-        android:drawableLeft="@drawable/ic_action_start"/>
+    <!-- ListView displays a list of scrollable items. The list items are automatically inserted to
+    the list using an Adapter that pulls content from a source such as an array or database query -->
+    <ListView
+        android:id="@+id/listofJela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-    <!-- Declares a button that opens a browser -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open Web Browser"
-        android:id="@+id/open_browser"
-        android:onClick="btnOpenBrowserClicked"
-        android:drawableLeft="@drawable/action_search"/>
 
 </LinearLayout>

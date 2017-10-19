@@ -80,7 +80,15 @@ public class Jelo {
 
     @Override
     public String toString() {
-        return naziv;
+        return "Jelo{" +
+                "id=" + id +
+                ", image='" + image + '\'' +
+                ", naziv='" + naziv + '\'' +
+                ", opis='" + opis + '\'' +
+                ", sastojci='" + sastojci + '\'' +
+                ", kalorijskaVrednost=" + kalorijskaVrednost +
+                ", cena=" + cena +
+                '}';
     }
 }
 
